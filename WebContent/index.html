@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Registration Application</title>
+   <style>
+   #regForm{
+    background : #F5FFFA;
+    font-family : corbel;
+    color : #112233;
+    font-size : 25px;
+    border : 5px solid;
+    border-color : #6699aa;
+   }
+   #heading{
+    font-family : corbel;
+    color : #225588;
+    font-size : 44px;
+   }
+   </style>
+ </head>
+ <body style='background:#E6E6FA'>
+    <a href='show' style='font-size:20px; font-family:corbel'>Display Registered Students</a>
+    <div align='center'>
+        <p id='heading'>Registration form</p>
+        <form action="register" method="post">
+             <table id='regForm'>
+                 <tr>
+                     <td>Enter id:</td>
+                     <td><input type="text" name="eid"></td>
+                 </tr>
+                 <tr>
+                     <td>Enter name:</td>
+                     <td><input type="text" name="ename"></td>
+                 </tr>
+                 <tr>
+                     <td>Select Gender:</td>
+                     <td><input type="radio" name="gen" value="Female">Female
+                     	&nbsp;<input type="radio" name="gen" value="Male">Male
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>Select City:</td>
+                     <td>
+                          <select name="city">
+                             <option value="Dilshad Garden">Dilshad Garden</option>
+                             <option value="Laxmi Nagar">Laxmi Nagar</option>
+                             <option value="Noida">Noida</option>
+                             <option value="Dwarka">Dwarka</option>
+                          </select>        
+                     </td>
+                   </tr>
+                   <tr>
+                   	  <td>
+                   	  	 Choose your enrolled course:
+                   	  </td>
+                     <td>
+                          <input type="checkbox" name="crs" value="Java">Java &nbsp;
+                          <input type="checkbox" name="crs" value="Python">Python &nbsp;
+                          <input type="checkbox" name="crs" value="Oracle">Oracle &nbsp;
+                          <input type="checkbox" name="crs" value="SQL">SQL&nbsp;
+                     </td>
+                 </tr>
+             </table>
+             <br>
+             <div>
+             <input type="submit" value="register" style='width:100px; height:40px; font-size:20px;'/>&nbsp;
+             <input type="reset" value="clear" style='width:100px; height:40px; font-size:20px;'/>     
+             </div>
+        </form>
+     </div>
+   </body>
+</html>
